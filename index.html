@@ -1,87 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My First Webpage</title>
-    <style>
-      /* Page background and text styling */
-      body {
-        background-color: #e9f3fb;
-        font-family: Arial, sans-serif;
-        color: #2c3e50;
-        margin: 0;
-        padding: 40px 16px;
-        text-align: center;
-      }
 
-      /* Center content nicely */
-      main {
-        max-width: 760px;
-        margin: 0 auto;
-      }
-
-      h1 {
-        margin-top: 0;
-      }
-
-      p {
-        font-size: 18px;
-      }
-
-      img {
-        border: 3px solid #2c3e50;
-        border-radius: 10px;
-        margin: 20px 0 10px;
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      h2 {
-        margin-top: 20px;
-      }
-
-      /* Make the list show bullets and align left within the centered page */
-      ul {
-        list-style-type: circle;
-        padding-left: 24px;
-        text-align: left;
-        display: inline-block;
-        margin: 8px 0 20px;
-      }
-
-      a {
-        color: #2980b9;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      a:hover {
-        color: #1abc9c;
-      }
-
-      button {
-        background-color: #2980b9;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 6px;
-        cursor: pointer;
-        margin-top: 12px;
-      }
-
-      button:hover {
-        background-color: #1abc9c;
-      }
-    </style>
+    <!-- Updated path to CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
       <h1>Hello, my name is Taylor Brigman</h1>
       <p>This is my very first webpage. I'm learning to code!</p>
 
-      <!-- Random placeholder image -->
-      <img src="https://picsum.photos/300/200" alt="Random photo" />
+      <!-- Example of image from the images folder -->
+      <img src="images/random-photo.jpg" alt="Random photo" />
 
       <h2>My Favorite Things</h2>
       <ul>
@@ -97,9 +30,29 @@
       </a>
 
       <br />
-      <button>Click Me!</button>
+      <button id="clickBtn">Click Me!</button>
+      <button id="toggle-theme">Toggle Dark Mode</button>
+      <h2>Contact Me</h2>
+<form id="contact-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+  <br /><br />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+  <br /><br />
+
+  <label for="message">Message:</label><br />
+  <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+
+  <br /><br />
+
+  <button type="submit">Send</button>
+</form>
     </main>
+    <!-- Updated path to JS file -->
+    <script src="js/script.js"></script>
   </body>
 </html>
-
-
