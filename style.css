@@ -194,12 +194,18 @@ form button {
 form button:hover {
   background-color: #1a242f;
 }
-// Handle form submission
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-  event.preventDefault(); // stops page refresh
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
 
-  alert(`Thanks, ${name}! I received your message: "${message}" \nWe’ll reply to ${email}.`);
-});
+#site-footer {
+  margin-top: 32px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
